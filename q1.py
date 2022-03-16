@@ -4,7 +4,7 @@ from collections import defaultdict
 def def_value():
     return 0
 
-spark = pyspark.sql.SparkSession.builder.appName("Spark Lab").getOrCreate()
+spark = pyspark.sql.SparkSession.builder.appName("Part A").getOrCreate()
 #print(spark.version())
 d = defaultdict(def_value)
 p = []
