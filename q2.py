@@ -45,6 +45,5 @@ print("printing response lengths")
 reslen = sp3.filter(lambda x: x!= '')
 print(reslen.take(10))
 
-print(reslen.count())
 
 
