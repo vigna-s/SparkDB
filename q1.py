@@ -33,7 +33,7 @@ rdd1=spark.sparkContext.parallelize(p)
 s = sorted(d.items(), key = lambda i: i[1],reverse=True)
 rdd2=spark.sparkContext.parallelize(s)
 #print(s)
-header = ['item1','item2','count']
+#header = ['Item 1','Item 2','Count']
 forCSV = []
 for item in s:
     l = []
@@ -43,7 +43,7 @@ for item in s:
     forCSV.append(l)
 with open('count.csv','w') as f:
     writer = csv.writer(f)
-    writer.writerow(header)
+    #writer.writerow(header)
     for l in forCSV:
         writer.writerow(l)
 
